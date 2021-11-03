@@ -104,4 +104,6 @@ dist
 .tern-port
 
 # Other directories and files
-.github/
+.hintrc
+.stylelintrc.json
+.eslintrc.json
