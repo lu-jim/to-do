@@ -10,6 +10,7 @@ class todoList {
     });
     localStorage.setItem('list', JSON.stringify(newList));
     JSON.parse(localStorage.getItem('list'));
+    window.location.reload();
   };
 
   static getList = () => JSON.parse(localStorage.getItem('list')) || todoList.dummyList();
