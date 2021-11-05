@@ -5,8 +5,9 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: {
+    todo: './src/ToDo.js',
+    list: './src/todoList.js',
     index: './src/index.js',
-    completion: './src/completion.js',
   },
   devServer: {
     open: true,
