@@ -3,13 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
   mode: 'development',
+  entry: {
+    todo: './src/ToDo.js',
+    list: './src/todoList.js',
+    index: './src/index.js',
+  },
   devServer: {
     open: true,
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [

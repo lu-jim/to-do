@@ -67,6 +67,10 @@ li {
   color: lightgray;
 }
 
+.list-done {
+  text-decoration: line-through solid red;
+}
+
 input {
   border: 0;
   outline: 0;
