@@ -1,8 +1,7 @@
-# to-do
+# To-Do
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome Books
 
 > Project for Module 2 - week 2 of the Microverse program
 
