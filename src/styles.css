@@ -2,8 +2,18 @@
 
 body {
   background-color: #f6f6f6;
-  font-family: Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    Rubik,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-weight: 300;
 }
 
@@ -62,6 +72,7 @@ li {
   display: inline-flex;
   font-size: 1.5rem;
 }
+
 .refresh-icon {
   text-decoration: none;
   color: lightgray;
@@ -99,7 +110,6 @@ input.list-input {
   color: #fff;
   background-color: #c9302c;
   border-color: #761c19;
-
   display: inline-block;
   margin-bottom: 0;
   font-weight: 400;
@@ -115,5 +125,4 @@ input.list-input {
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
-
 }
