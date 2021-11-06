@@ -8,6 +8,7 @@ module.exports = {
     todo: './src/ToDo.js',
     list: './src/todoList.js',
     index: './src/index.js',
+    change: './src/changeList.js',
   },
   devServer: {
     open: true,

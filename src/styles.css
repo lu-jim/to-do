@@ -25,13 +25,13 @@ li {
   border: solid 1px lightgray;
   display: flex;
   flex-direction: column;
-  width: 30rem;
+  width: 35rem;
   background-color: #fff;
 }
 
 .list-title-section {
   display: inline-flex;
-  width: 25rem;
+  width: 30rem;
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 1px solid lightgray;
@@ -44,48 +44,85 @@ li {
 
 .list-item {
   border-bottom: 1px solid lightgray;
-  padding: 0.8rem 0;
-  width: 25rem;
+  padding: 0;
+  width: 30rem;
   margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.list-description {
+  width: 26rem;
+  line-height: 1.5rem;
 }
 
 .list-input {
   padding: 0.8rem 0;
-  width: 25rem;
+  width: 30rem;
   margin: 0;
   border: 0;
 }
 
 .list-input-section {
   border-bottom: 1px solid lightgray;
-  width: 25rem;
+  width: 30rem;
 }
 
 .list-refresh {
   display: inline-flex;
   font-size: 1.5rem;
+}
+
+.refresh-icon {
+  text-decoration: none;
   color: lightgray;
 }
 
 .list-done {
-  text-decoration: line-through solid red;
+  text-decoration: line-through;
+  color: #888;
 }
 
 input {
   border: 0;
   outline: 0;
-  font-style: italic;
   font-size: 1rem;
+  padding: 0.5rem;
 }
 
 input:focus {
   outline: none !important;
 }
 
-.list-clear {
+input.list-input {
+  font-style: italic;
+}
+
+#list-clear {
   background-color: lightgray;
   padding: 1rem;
   display: flex;
   opacity: 70%;
   justify-content: center;
+}
+
+.delete {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
 }

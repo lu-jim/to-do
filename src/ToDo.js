@@ -1,8 +1,8 @@
 class ToDo {
-  constructor(description) {
+  constructor(description, length) {
     this.description = description;
     this.completed = false;
-    this.index = 0;
+    this.index = length;
   }
 }
 
