@@ -15,6 +15,10 @@ Additional description about the project and its features.
 - Javascript
 - Webpack
 
+## Live Demo
+[Live Demo Link](https://lu-jim.github.io/to-do/dist/)
+
+## Getting Started
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
