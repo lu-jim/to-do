@@ -94,7 +94,6 @@ class todoList {
     list[`${index}`].description = newDescription.value;
     localStorage.setItem('list', JSON.stringify(list));
   };
-
 }
 
 export { todoList as default };
