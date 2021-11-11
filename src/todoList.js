@@ -95,7 +95,6 @@ class todoList {
     localStorage.setItem('list', JSON.stringify(list));
   };
 
-  static testList = () => true;
 }
 
 export { todoList as default };
