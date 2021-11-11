@@ -24,6 +24,18 @@ describe('Add Item', () => {
   });
 });
 
-it('works', () => {
-  expect(todoList.testList()).toBe(true);
+describe('Delete item', () => {
+  it('Delete item from the DOM', () => {
+    document.body.innerHTML = '<div> <ul id="to-do"> <li class="list-item"><a class="delete" id="delete-0"></a> </li></div>';
+    todoList.deleteToDo(0);
+    todoList.reset();
+    todoList.showToDo();
+    const list = document.querySelectorAll('#to-do li');
+    expect(list).toHaveLength(0);
+  });
+  it('Delete item from the local storage', () => {
+    todoList.saveToDo(new ToDo('Finish the project', 0));
+    todoList.deleteToDo('0');
+    expect(todoList.getList()).toStrictEqual([]);
+  });
 });

@@ -38,7 +38,7 @@ class todoList {
   static showToDo() {
     const list = todoList.getList();
     list.forEach((task) => {
-      todoList.adcalculatordTask(task);
+      todoList.addTask(task);
       task.index = list.indexOf(task);
     });
   }
