@@ -38,7 +38,7 @@ class todoList {
   static showToDo() {
     const list = todoList.getList();
     list.forEach((task) => {
-      todoList.addTask(task);
+      todoList.adcalculatordTask(task);
       task.index = list.indexOf(task);
     });
   }
@@ -94,6 +94,8 @@ class todoList {
     list[`${index}`].description = newDescription.value;
     localStorage.setItem('list', JSON.stringify(list));
   };
+
+  static testList = () => true;
 }
 
 export { todoList as default };
