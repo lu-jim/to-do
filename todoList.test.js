@@ -1,8 +1,14 @@
 /**
  * @jest-environment jsdom
  */
+import { expect, jest } from '@jest/globals';
 import todoList from './src/todoList.js';
 import { ToDo } from './src/ToDo.js';
+
+function getDescription(storage) {
+  const value = storage.getItem('list').description;
+  return value;
+}
 
 describe('Add Item', () => {
   it('Add item to the DOM', () => {
@@ -14,13 +20,9 @@ describe('Add Item', () => {
 
   it('Add item to the local Storage', () => {
     todoList.saveToDo(new ToDo('Finish the project', 0));
-    expect(todoList.getList()).toStrictEqual([
-      {
-        description: 'Finish the project',
-        completed: false,
-        index: 0,
-      },
-    ]);
+    const mockCallback = jest.fn();
+    mockCallback.mockReturnValue({ description: 'Finish the project' });
+    expect(getDescription({ getItem: mockCallback })).toBe('Finish the project');
   });
 });
 
