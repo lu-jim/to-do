@@ -33,6 +33,7 @@ To get a local copy up and running follow these simple steps.
 - Type `git clone`, and then paste the URL copied in the Setup section.
 - Within the directory, use `npm i`  to install dependencies.
 - Finally, use `npm run build` to obtain the final dist files
+- use npm test or npm run test to perform the unit tests.
 ## Authors
 
 👤 **Luis Fernando Jimenez**
